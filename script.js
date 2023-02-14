@@ -34,7 +34,9 @@ function calculateEquations() {
       }
       console.log(result);
       if (result === 10) {
-        alert("The result is 10!");
+        setTimeout(() => {
+          alert('The result is 10!');
+        }, 2000);
       }
       cells[4].innerHTML = result;
       total += result; // add the result to the total
